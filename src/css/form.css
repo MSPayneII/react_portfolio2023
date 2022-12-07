@@ -1,0 +1,64 @@
+.form-submit-btn {
+  font-size: var(--ft-body);
+  border-color: transparent;
+  width: 12.5rem;
+  padding: 1rem 2rem;
+}
+
+.form-legend {
+  font-size: var(--ft-body);
+  line-height: var(--lh-h3-body);
+  margin-bottom: 2rem;
+}
+
+.form-label {
+  color: var(--clr-grayish-dark-blue);
+  font-size: var(--ft-body);
+  line-height: var(--lh-h3-body);
+  font-weight: var(--fw-medium);
+}
+
+.error-icon {
+  font-size: var(--ft-heading-4);
+  line-height: var(--lh-h4);
+
+  margin-right: 0.5rem;
+}
+
+.form-error-msg {
+  display: flex;
+  align-items: center;
+  color: var(--clr-red);
+  font-size: var(--ft-standard);
+  font-weight: var(--fw-bold);
+  margin-top: 0.5rem;
+}
+
+.form-input-field {
+  display: block;
+  color: var(--clr-grayish-dark-blue);
+  background-color: var(--clr-light-grey);
+  font-size: var(--ft-body);
+  width: 95%;
+  height: 3rem;
+  padding-left: 1rem;
+  border: none;
+  margin-bottom: 2.125rem;
+  margin-top: 0.5rem;
+}
+
+.form-input-field[placeholder] {
+  font-weight: var(--fw-medium);
+}
+
+.form-input-message {
+  padding-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .form-legend {
+    width: 36.5rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+}

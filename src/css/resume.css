@@ -1,0 +1,50 @@
+.resume-section {
+  display: grid;
+  margin-bottom: 2rem;
+}
+
+.resume-lists-grouping,
+.resume-experience-grouping {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.resume-list-item {
+  font-size: var(--ft-body);
+  line-height: var(--lh-h3-body);
+}
+
+.resume-section .primary-secondary-header {
+  margin-bottom: 2.375rem;
+}
+
+.resume-section .quaternary-header {
+  margin-bottom: 0.5rem;
+}
+
+.job-details {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .resume-lists-grouping {
+    flex-direction: row;
+    margin-bottom: 2.5rem;
+    gap: 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .resume-section {
+    grid-template-columns: 0.8fr 1fr;
+  }
+
+  .resume-section .divider-line {
+    grid-column: 1 / span end;
+  }
+
+  .resume-lists-grouping {
+    gap: 3rem;
+  }
+}

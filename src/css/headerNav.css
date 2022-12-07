@@ -1,0 +1,261 @@
+/*
+=============== 
+Navbar
+===============
+*/
+
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+
+.header {
+  margin-bottom: 5rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-center {
+  width: 100%;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-toggle,
+.close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7rem;
+  height: 2.5rem;
+  border-color: transparent;
+  font-size: var(--ft-body);
+  font-weight: var(--fw-regular);
+}
+
+.menu-icon {
+  margin-left: 0.5rem;
+}
+
+.nav-links {
+  display: none;
+}
+
+.link {
+  display: block;
+  position: relative;
+  color: var(--clr-grayish-dark-blue);
+  font-size: var(--ft-body);
+  font-weight: var(--fw-regular);
+  letter-spacing: 0.125rem;
+  transition: var(--transition1);
+}
+
+.link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.125rem;
+  left: 50%;
+  bottom: -0.3125rem;
+  width: 0;
+  background: var(--clr-dark-blue);
+  opacity: 0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.link:hover::after {
+  opacity: 1;
+  width: 100%;
+  left: 0;
+}
+
+.nav-links :nth-child(2) .link:hover::after {
+  width: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+  }
+  .nav-links :not(:last-child) {
+    margin-right: 2.875rem;
+  }
+
+  .link-btn {
+    background: none;
+    border: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .link :not(:last-child) {
+    margin-right: 2.25rem;
+  }
+}
+
+.submenu {
+  background: var(--clr-white);
+  box-shadow: var(--shadow2);
+  position: absolute;
+  top: 4rem;
+  transform: translateX(-11%);
+  z-index: 2;
+  display: none;
+  padding: 1.5rem 1rem;
+  transition: var(--transition2);
+  margin-top: 1rem;
+}
+.submenu::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 0.9375rem solid transparent;
+  border-right: 0.9375rem solid transparent;
+  border-bottom: 0.9375rem solid var(--clr-white);
+  position: absolute;
+  top: -0.6875rem;
+  left: 5%;
+}
+
+.submenu.show {
+  display: block;
+}
+
+.submenu-center {
+  display: grid;
+  gap: 1.5rem;
+}
+.col-1 {
+  grid-template-columns: 1fr;
+}
+
+/*
+=============== 
+Mobile Nav
+===============
+*/
+
+.close-btn {
+  background-color: var(--clr-red);
+  color: var(--clr-white);
+  transition: var(--transition1);
+}
+
+.close-btn:hover {
+  box-shadow: var(--shadow2);
+  background-color: var(--clr-red-hover);
+}
+
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  place-items: center;
+  transition: var(--transition1);
+  background: rgba(51, 50, 61, 0.9);
+}
+
+.mobile-nav-overlay.show {
+  display: grid;
+  z-index: 2;
+}
+
+.mobile-nav-container {
+  position: absolute;
+  top: 2rem;
+  width: 70vw;
+  height: 26.3125rem;
+  max-width: var(--fixed-width);
+  background: var(--clr-white);
+  box-shadow: var(--shadow2);
+  padding: 2rem 3rem;
+}
+
+.mobile-nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.75rem;
+}
+
+.mobile-nav-divider-line {
+  background-color: var(--clr-light-grey);
+  height: 0.0625rem;
+  width: 100%;
+  margin-bottom: 2.3125rem;
+}
+
+.mobile-nav-title {
+  font-family: var(--type-nunito);
+  font-size: var(--ft-heading-4);
+  font-weight: var(--fw-medium);
+}
+
+.mobile-nav-links :not(:last-child) {
+  margin-bottom: 2.75rem;
+}
+
+.mobile-nav-link {
+  display: block;
+  position: relative;
+  color: var(--clr-grayish-dark-blue);
+  font-size: var(--ft-body);
+  font-weight: var(--fw-medium);
+  letter-spacing: 0.125rem;
+  transition: var(--transition1);
+}
+
+.mobile-nav-link:hover {
+  font-weight: var(--fw-bold);
+}
+
+.mobile-nav-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.125rem;
+  left: 0;
+  bottom: -0.875rem;
+  width: 0;
+  background: var(--clr-dark-blue);
+  opacity: 0;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+.mobile-nav-link:hover::after {
+  opacity: 1;
+  width: 30%;
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-thickness: 0.13rem;
+  text-underline-offset: 0.625rem;
+  color: var(--clr-dark-blue);
+}

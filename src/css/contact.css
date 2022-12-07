@@ -1,0 +1,126 @@
+/*
+=============== 
+Get in touch section
+===============
+*/
+
+.get-in-touch-text {
+  display: grid;
+  margin-bottom: 2rem;
+}
+
+.get-in-touch-body {
+  margin-bottom: 2.5rem;
+}
+.get-in-touch-text .primary-secondary-header {
+  margin-bottom: 2.375rem;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.social-icon {
+  font-size: var(--ft-heading-2);
+}
+
+.external-social-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: auto;
+  font-size: var(--ft-standard);
+  font-weight: var(--fw-regular);
+  letter-spacing: 0.125rem;
+  text-decoration: none;
+  padding: 1rem;
+  background-color: transparent;
+  color: var(--clr-grayish-dark-blue);
+  transition: var(--transition2);
+  cursor: pointer;
+  gap: 0.8rem;
+  text-align: center;
+}
+
+.external-social-link:hover {
+  background-color: var(--clr-grayish-dark-blue);
+  color: var(--clr-white);
+}
+
+@media screen and (min-width: 650px) {
+  .socials {
+    flex-direction: row;
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .social-icon {
+    font-size: var(--ft-heading-3);
+  }
+
+  .get-in-touch-body {
+    max-width: 40.0625rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .get-in-touch-text {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .get-in-touch-text .primary-secondary-header {
+    grid-column: 1;
+  }
+  .get-in-touch-body {
+    grid-column: 2;
+    width: 36.6875rem;
+  }
+
+  .socials,
+  .get-in-touch-text .divider-line {
+    grid-column: 1 / span end;
+  }
+
+  .external-social-link {
+    padding: 0.5rem 1rem;
+    /* width: 10rem; */
+  }
+
+  .socials {
+    grid-column: 2;
+    margin-bottom: 2.9375rem;
+  }
+}
+
+/*
+=============== 
+Contact section
+===============
+*/
+
+.contact-me {
+  display: grid;
+  margin-bottom: 5rem;
+}
+
+.contact-me .primary-secondary-header {
+  margin-bottom: 2.625rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-me {
+    margin-bottom: 6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .contact-me {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 6.8125rem;
+  }
+}

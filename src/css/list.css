@@ -1,0 +1,129 @@
+.projects-page-header {
+  margin-bottom: 3.375rem;
+}
+
+.list-container {
+  display: grid;
+  width: 100%;
+  margin-bottom: 5.625rem;
+}
+
+.link-article {
+  transition: var(--transition2);
+  color: var(--clr-grayish-dark-blue);
+  margin-bottom: 4.5rem;
+}
+
+.link-article:hover {
+  box-shadow: var(--shadow2);
+}
+
+.link-article:hover .divider-line {
+  visibility: hidden;
+}
+
+.list-item {
+  display: grid;
+}
+
+.list-item-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.list-item-text {
+  display: grid;
+  align-content: space-between;
+}
+
+.list-details {
+  padding: 2rem 1.5rem;
+}
+
+.list-item-text .tertiary-header,
+.list-item-text .quaternary-header {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .list-container {
+    margin-bottom: 10.9375rem;
+  }
+
+  .link-article {
+    margin-bottom: 5.0625rem;
+  }
+
+  .list-item {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 2.3125rem;
+  }
+
+  .list-item-img {
+    width: 22.1875rem;
+    margin-bottom: 0;
+  }
+  .list-details {
+    padding: 0;
+  }
+
+  .list-item-text {
+    row-gap: 1rem;
+  }
+
+  .list-item-body {
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .list-item {
+    column-gap: 3.8125rem;
+    max-width: 63.4375rem;
+  }
+
+  .link-article .list-item-body {
+    padding-right: 0;
+  }
+
+  /* .link-article:nth-child(2n + 1) {
+    margin-right: 3.9375rem;
+  } */
+
+  .link-article:nth-child(2n + 1) .list-item .list-item-img {
+    order: 1;
+  }
+  .link-article:nth-child(2n + 1) .list-item .list-item-text {
+    padding-right: 3rem;
+    order: 2;
+  }
+
+  /* .link-article:nth-child(2n) {
+    margin-left: 3.9375rem;
+  } */
+
+  .link-article:nth-child(2n) .list-item-img {
+    order: 2;
+  }
+  .link-article:nth-child(2n) .list-item-text {
+    padding-left: 3rem;
+    order: 1;
+  }
+
+  .list-item {
+    column-gap: 4.3125rem;
+  }
+
+  .list-item-img {
+    width: 32.75rem;
+  }
+
+  .list-item-text {
+    row-gap: 3rem;
+  }
+
+  .list-item-body {
+    padding-right: 3rem;
+  }
+}
