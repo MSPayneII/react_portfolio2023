@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { useGlobalContext } from "./context";
 import {
   Home,
@@ -23,9 +23,8 @@ import {
 } from "./projects/index";
 
 function App() {
-  const { category } = useGlobalContext();
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div className="page-container">
         <HeaderNav />
         <MobileNav />
@@ -58,7 +57,7 @@ function App() {
           />
           <Route
             path="/ux-projects/website-comparison"
-            element={<AudienceExpansion />}
+            element={<WebsiteComparison />}
           />
 
           <Route path="/contact-me" element={<Contact />} />
@@ -66,7 +65,7 @@ function App() {
         </Routes>
       </div>
       <Footer />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
