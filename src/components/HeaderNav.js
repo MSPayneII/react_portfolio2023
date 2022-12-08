@@ -1,10 +1,9 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { useGlobalContext } from "../context";
 import { NavLink } from "react-router-dom";
 import BigLogo from "../assets/logo/big-logo.svg";
 import SmallLogo from "../assets/logo/small-logo-black.svg";
 import { AiOutlineMenu } from "react-icons/ai";
-import { navbarLinks } from "../utils/navLinks";
 import "../css/headerNav.css";
 import Submenu from "./Submenu";
 
@@ -13,7 +12,7 @@ const HeaderNav = () => {
     screenSize,
     checkSize,
     openMenu,
-    closeMenu,
+
     openSubmenu,
     closeSubmenu,
   } = useGlobalContext();
@@ -38,7 +37,7 @@ const HeaderNav = () => {
     return () => {
       window.removeEventListener("resize", checkSize);
     };
-  }, []);
+  }, [checkSize]);
 
   return (
     <header className="header">

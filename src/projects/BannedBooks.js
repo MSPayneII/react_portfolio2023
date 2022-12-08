@@ -104,6 +104,7 @@ const BannedBooks = () => {
           <p>{takeaway.body}</p>
         </section>
       </div>
+      <Collaborate />
     </main>
   );
 };

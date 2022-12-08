@@ -6,8 +6,7 @@ import { mobileLinks } from "../utils/navLinks";
 import "../css/headerNav.css";
 
 const MobileNav = () => {
-  const { screenSize, checkSize, isMenuOpen, closeMenu, updateCategory } =
-    useGlobalContext();
+  const { screenSize, checkSize, isMenuOpen, closeMenu } = useGlobalContext();
 
   useEffect(() => {
     window.addEventListener("resize", checkSize);
@@ -18,7 +17,7 @@ const MobileNav = () => {
     return () => {
       window.removeEventListener("resize", checkSize);
     };
-  }, [screenSize]);
+  }, [screenSize, checkSize, closeMenu]);
 
   return (
     <div

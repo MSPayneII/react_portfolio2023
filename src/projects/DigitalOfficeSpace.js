@@ -73,7 +73,7 @@ const DigitalOfficeSpace = () => {
             link:
           </p>
           <div className="project-external-video-link-container">
-            <a href="" className="site-nav-link">
+            <a href="https://youtu.be/z2JOyV84S0g" className="site-nav-link">
               Digital Office Space Youtube Video
             </a>
           </div>

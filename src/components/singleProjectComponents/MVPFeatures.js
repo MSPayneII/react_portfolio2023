@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const MVPFeatures = ({ features }) => {
   const { header, featureList } = features;

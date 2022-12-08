@@ -1,14 +1,14 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const Collaborate = () => {
   return (
     <article className="collaborate-container">
       <h2 className="primary-secondary-header">Want to collaborate?</h2>
       <div className="divider-line"></div>
       <div>
-        <a href="" className="site-nav-link">
+        <Link to="/contact-me" className="site-nav-link">
           Contact me
-        </a>
+        </Link>
       </div>
     </article>
   );
