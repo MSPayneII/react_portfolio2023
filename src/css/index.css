@@ -205,6 +205,9 @@ body {
   color: var(--clr-white);
 }
 
+.btn {
+  padding: 1rem;
+}
 .polaroid {
   position: relative;
   background: #fff;

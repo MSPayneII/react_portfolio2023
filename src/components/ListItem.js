@@ -9,7 +9,7 @@ const ListItem = ({ img, alt, title, client, tech, desc }) => {
     return () => {
       window.removeEventListener("resize", checkSize);
     };
-  }, [screenSize]);
+  }, [checkSize]);
 
   return (
     <article className="list-item">

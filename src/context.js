@@ -37,6 +37,14 @@ const AppProvider = ({ children }) => {
     setIsMenuOpen(false);
   };
 
+  const backToTop = () => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
+
   const updateCategory = (category) => {
     setCategory(category);
   };
@@ -58,6 +66,7 @@ const AppProvider = ({ children }) => {
         isMenuOpen,
         openMenu,
         closeMenu,
+        backToTop,
         screenSize,
         checkSize,
         page,

@@ -17,9 +17,7 @@ const Hero = () => {
           <h1 className="primary-secondary-header hero-title">
             Hello! I'm Michael, an aspiring UX Engineer, and Researcher
           </h1>
-          <a href="" className="site-nav-link">
-            View my work
-          </a>
+          <button className="btn site-nav-link">View my work</button>
         </div>
 
         <div className="divider-line"></div>

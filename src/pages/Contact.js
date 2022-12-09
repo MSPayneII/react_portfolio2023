@@ -7,9 +7,15 @@ import {
 
 import Form from "../components/Form";
 import { useGlobalContext } from "../context";
+import { useEffect } from "react";
 
 const Contact = () => {
   const { closeSubmenu } = useGlobalContext();
+
+  useEffect(() => {
+    //scroll to top on page load
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
 
   return (
     <main onMouseOver={closeSubmenu}>

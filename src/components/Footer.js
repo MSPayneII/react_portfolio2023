@@ -4,22 +4,14 @@ import SmallLogo from "../assets/logo/small-logo-white.svg";
 import { FaChevronUp } from "react-icons/fa";
 import { useGlobalContext } from "../context";
 const Footer = () => {
-  const { screenSize, checkSize } = useGlobalContext();
+  const { screenSize, checkSize, backToTop } = useGlobalContext();
 
   useEffect(() => {
     window.addEventListener("resize", checkSize);
     return () => {
       window.removeEventListener("resize", checkSize);
     };
-  }, []);
-
-  const backToTop = () => {
-    window.scroll({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    });
-  };
+  }, [checkSize]);
 
   return (
     <footer className="footer">
@@ -28,10 +20,10 @@ const Footer = () => {
           src={screenSize < 1024 ? SmallLogo : BigLogo}
           alt="Michael S. Payne II"
         />
-        <a href="" className="back-top-link">
+        <button className="back-top-link" onClick={backToTop}>
           Back to top
-          <FaChevronUp className="footer-icon" onClick={backToTop} />
-        </a>
+          <FaChevronUp className="footer-icon" />
+        </button>
 
         <p className="footer-copy">Coded in React, 2022</p>
       </div>
