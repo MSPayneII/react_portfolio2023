@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Hero from "../components/Hero";
 import AboutImg from "../assets/homescreen/aboutme.svg";
 import Collaborate from "../components/Collaborate";
@@ -10,9 +10,12 @@ import "../css/list.css";
 
 const Home = () => {
   const { closeSubmenu } = useGlobalContext();
+
+  let workSection = useRef(null);
+
   return (
     <main onMouseOver={closeSubmenu}>
-      <Hero />
+      <Hero workSection={workSection} />
       <div className="about-me">
         <div className="polaroid">
           <img
@@ -39,7 +42,7 @@ const Home = () => {
           </p>
         </div>
       </div>
-      <section className="my-work-section">
+      <section className="my-work-section" ref={workSection}>
         <h2 className="primary-secondary-header">My work</h2>
         <div className="list-container">
           {workCategories.map((item) => {

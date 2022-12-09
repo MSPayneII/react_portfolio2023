@@ -1,7 +1,7 @@
 import React from "react";
 import { useGlobalContext } from "../context";
 
-const Hero = () => {
+const Hero = ({ workSection }) => {
   const { closeSubmenu } = useGlobalContext();
 
   return (
@@ -17,7 +17,14 @@ const Hero = () => {
           <h1 className="primary-secondary-header hero-title">
             Hello! I'm Michael, an aspiring UX Engineer, and Researcher
           </h1>
-          <button className="btn site-nav-link">View my work</button>
+          <button
+            className="btn site-nav-link"
+            onClick={() =>
+              workSection.current.scrollIntoView({ behavior: "smooth" })
+            }
+          >
+            View my work
+          </button>
         </div>
 
         <div className="divider-line"></div>
