@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ErrorImg from "../assets/UndrawSvgs/undraw_page_not_found_re_e9o6.svg";
 
-const Error = () => {
+const PageNotFound = () => {
   return (
     <main>
       <div className="error-text">
@@ -18,4 +18,4 @@ const Error = () => {
   );
 };
 
-export default Error;
+export default PageNotFound;

@@ -5,7 +5,7 @@ import {
   Resume,
   DevProjects,
   UxProjects,
-  Error,
+  PageNotFound,
 } from "./pages/index";
 import { HeaderNav, MobileNav, Footer } from "./components/index";
 
@@ -60,7 +60,7 @@ function App() {
           />
 
           <Route path="/contact-me" element={<Contact />} />
-          <Route path="*" element={<Error />} />
+          <Route path="*" element={<PageNotFound />} />
         </Routes>
       </div>
       <Footer />
