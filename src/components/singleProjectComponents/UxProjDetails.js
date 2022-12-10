@@ -19,30 +19,30 @@ const UxProjDetails = ({
         <div className="project-stats-container flex-stats-container">
           <div>
             <p className="project-stat">
-              <span className="stat-header">Client : </span>
+              <strong className="stat-header">Client: </strong>
               {client}
             </p>
             <p className="project-stat">
-              <span className="stat-header">Role : </span>
+              <strong className="stat-header">Role: </strong>
               {role}
             </p>
             <p className="project-stat">
-              <span className="stat-header">Time : </span>
+              <strong className="stat-header">Time: </strong>
               {time}
             </p>
           </div>
           <div>
             <p className="project-stat">
-              <span className="stat-header">Team : </span>
+              <strong className="stat-header">Team: </strong>
               {team}
             </p>
 
             <p className="project-stat">
-              <span className="stat-header">Category : </span>
+              <strong className="stat-header">Category: </strong>
               {classification}
             </p>
-            <p className="project-stat">
-              <span className="stat-header">Skills : </span>
+            <p className="project-stat skills-stat">
+              <strong className="stat-header">Skills: </strong>
               {skills}
             </p>
           </div>

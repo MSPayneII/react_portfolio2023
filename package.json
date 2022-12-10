@@ -1,5 +1,5 @@
 {
-  "homepage": "https://mspayneii.github.io",
+  "homepage": "https://michaelspayneii.com",
   "name": "portfolio2023",
   "version": "0.1.0",
   "private": true,
@@ -18,8 +18,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "add-domain": "echo \"michaelspayneii.com\" > build/CNAME",
-    "deploy": "npm run add-domain && gh-pages -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

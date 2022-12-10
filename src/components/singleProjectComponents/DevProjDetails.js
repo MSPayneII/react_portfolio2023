@@ -21,11 +21,11 @@ const DevProjDetails = ({
             {client}
           </p> */}
           <p className="project-stat">
-            <span className="stat-header">Tech : </span>
+            <strong className="stat-header">Tech: </strong>
             {tech}
           </p>
           <p className="project-stat">
-            <span className="stat-header">Category : </span>
+            <strong className="stat-header">Category: </strong>
             {classification}
           </p>
         </div>
