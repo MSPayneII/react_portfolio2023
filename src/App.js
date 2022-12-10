@@ -1,5 +1,7 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
+import { HeaderNav, MobileNav, Footer } from "./components/index";
+
 import {
   Home,
   Contact,
@@ -7,10 +9,6 @@ import {
   DevProjects,
   UxProjects,
   PageNotFound,
-} from "./pages/index";
-import { HeaderNav, MobileNav, Footer } from "./components/index";
-
-import {
   ConnectFour,
   TodoApp,
   EightBallFortune,
@@ -20,7 +18,7 @@ import {
   BannedBooks,
   AudienceExpansion,
   WebsiteComparison,
-} from "./projects/index";
+} from "./pages/index";
 
 function App() {
   return (

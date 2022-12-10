@@ -1,5 +1,6 @@
 import React from "react";
 import { useGlobalContext } from "../context";
+import { SEO } from "../../components/SEO";
 
 import DevProjDetails from "../components/singleProjectComponents/DevProjDetails";
 import MVPFeatures from "../components/singleProjectComponents/MVPFeatures";
@@ -37,6 +38,12 @@ const EightBallFortune = () => {
 
   return (
     <main>
+      <SEO
+        title="8-Ball Fortune Teller | Development Projects | Michael S. Payne II Portfolio"
+        description=" Project: My Bright Paths Foundation Capstone project. A digital version of the Magic Eightball produced by Mattel"
+        name="Michael S. Payne II Portfolio"
+        type="article"
+      />
       <div className="main-project-img-container">
         <img src={EightBallFortuneMainImg} alt="" className="project-img" />
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import { useGlobalContext } from "../context";
+import { SEO } from "../../components/SEO";
 
 import DevProjDetails from "../components/singleProjectComponents/DevProjDetails";
 import MVPFeatures from "../components/singleProjectComponents/MVPFeatures";
@@ -49,6 +50,12 @@ const ConnectFour = () => {
 
   return (
     <main>
+      <SEO
+        title="Connect Four | Development Projects | Michael S. Payne II Portfolio"
+        description=" Project: A connect four game that allows human player vs. human player gameplay (alternating turns on the same computer)"
+        name="Michael S. Payne II Portfolio"
+        type="article"
+      />
       <div className="main-project-img-container">
         <img src={ConnectFourMainImg} alt="" className="project-img" />
       </div>

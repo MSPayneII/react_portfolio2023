@@ -1,5 +1,6 @@
 import { useGlobalContext } from "../context";
 import Collaborate from "../components/Collaborate";
+import { SEO } from "../../components/SEO";
 
 import UxProjDetails from "../components/singleProjectComponents/UxProjDetails";
 import BigTicketItems from "../components/singleProjectComponents/BigTicketItems";
@@ -31,6 +32,12 @@ const BannedBooks = () => {
 
   return (
     <main>
+      <SEO
+        title="Banned Books | UX Projects | Michael S. Payne II Portfolio"
+        description=" Project: An updated needs and usability assessment analysis of the Banned & Challenged Books website for the American Library Association"
+        name="Michael S. Payne II Portfolio"
+        type="article"
+      />
       <div className="main-project-img-container">
         <img src={BannedBooksMainImg} alt="" className="project-img" />
       </div>

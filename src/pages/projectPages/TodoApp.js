@@ -1,5 +1,6 @@
 import React from "react";
 import { useGlobalContext } from "../context";
+import { SEO } from "../../components/SEO";
 
 import DevProjDetails from "../components/singleProjectComponents/DevProjDetails";
 import MVPFeatures from "../components/singleProjectComponents/MVPFeatures";
@@ -22,6 +23,12 @@ const TodoApp = () => {
 
   return (
     <main>
+      <SEO
+        title="Todo App | Development Projects | Michael S. Payne II Portfolio"
+        description=" Project: A todo app built with ReactJS that supports drag and drop functionality and list filtering"
+        name="Michael S. Payne II Portfolio"
+        type="article"
+      />
       <div className="main-project-img-container">
         <img src={TodoAppMainImg} alt="" className="project-img" />
       </div>

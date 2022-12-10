@@ -1,10 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import UnderConstructionImg from "../assets/UndrawSvgs/undraw_under_construction_-46-pa.svg";
+import { SEO } from "../../components/SEO";
 
-const WebsiteComparison = () => {
+const AudienceExpansion = () => {
   return (
     <main>
+      <SEO
+        title="Audience Expansion | UX Projects | Michael S. Payne II Portfolio"
+        description=" Project: A customer assessment of current and potential customers to provide recommendations for attracting a new audience for Journeys International"
+        name="Michael S. Payne II Portfolio"
+        type="article"
+      />
       <div className="error-text">
         <h1 className="primary-secondary-header">
           This page is temporarily unavailable
@@ -23,4 +30,4 @@ const WebsiteComparison = () => {
   );
 };
 
-export default WebsiteComparison;
+export default AudienceExpansion;

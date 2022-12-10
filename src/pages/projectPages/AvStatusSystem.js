@@ -1,5 +1,6 @@
 import { useGlobalContext } from "../context";
 import Collaborate from "../components/Collaborate";
+import { SEO } from "../../components/SEO";
 
 import UxProjDetails from "../components/singleProjectComponents/UxProjDetails";
 import BigTicketItems from "../components/singleProjectComponents/BigTicketItems";
@@ -35,6 +36,12 @@ const AvStatusSystem = () => {
 
   return (
     <main>
+      <SEO
+        title="AV Status System | UX Projects | Michael S. Payne II Portfolio"
+        description=" Project: Established an automated email confirmation system for absentee ballot status updates in four Michigan cities & townships"
+        name="Michael S. Payne II Portfolio"
+        type="article"
+      />
       <div className="main-project-img-container">
         <img src={AvStatusMainImg} alt="" className="project-img" />
       </div>

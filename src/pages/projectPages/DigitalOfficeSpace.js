@@ -1,6 +1,7 @@
 import React from "react";
 import { useGlobalContext } from "../context";
 import Collaborate from "../components/Collaborate";
+import { SEO } from "../../components/SEO";
 
 import UxProjDetails from "../components/singleProjectComponents/UxProjDetails";
 import DigitalOfficeMainImg from "../assets/DigitalOfficeSpace/digital_office_main_img.png";
@@ -27,6 +28,12 @@ const DigitalOfficeSpace = () => {
   } = project;
   return (
     <main>
+      <SEO
+        title="Digital Office Space | Development Projects | Michael S. Payne II Portfolio"
+        description=" Project: A UX/development project for the creation of a digital office space for a Detroit-based non-profit community organization"
+        name="Michael S. Payne II Portfolio"
+        type="article"
+      />
       <div className="main-project-img-container">
         <img src={DigitalOfficeMainImg} alt="" className="project-img" />
       </div>
