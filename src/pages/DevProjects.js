@@ -2,7 +2,7 @@ import Collaborate from "../components/Collaborate";
 import ProjectList from "../components/ProjectList";
 import { useGlobalContext } from "../context";
 import { devProjects } from "../utils/lists";
-import { SEO } from "../components/SEO";
+import SEO from "../components/SEO";
 
 const Projects = () => {
   const { closeSubmenu } = useGlobalContext();

@@ -2,7 +2,7 @@ import React from "react";
 import { useGlobalContext } from "../context";
 import { education, skills, experience } from "../utils/lists";
 import "../css/resume.css";
-import { SEO } from "../components/SEO";
+import SEO from "../components/SEO";
 
 const Resume = () => {
   const { closeSubmenu } = useGlobalContext();

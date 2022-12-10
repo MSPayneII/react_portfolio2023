@@ -3,7 +3,7 @@ import ProjectList from "../components/ProjectList";
 import { useGlobalContext } from "../context";
 import { uxProjects } from "../utils/lists";
 
-import { SEO } from "../components/SEO";
+import SEO from "../components/SEO";
 
 const UxProjects = () => {
   const { closeSubmenu } = useGlobalContext();

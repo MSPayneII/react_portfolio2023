@@ -9,7 +9,7 @@ import Form from "../components/Form";
 import { useGlobalContext } from "../context";
 import { useEffect } from "react";
 
-import { SEO } from "../components/SEO";
+import SEO from "../components/SEO";
 
 const Contact = () => {
   const { closeSubmenu } = useGlobalContext();

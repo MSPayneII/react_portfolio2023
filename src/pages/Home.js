@@ -5,7 +5,7 @@ import Collaborate from "../components/Collaborate";
 import { useGlobalContext } from "../context";
 import { workCategories } from "../utils/lists";
 import { Link } from "react-router-dom";
-import { SEO } from "../components/SEO";
+import SEO from "../components/SEO";
 
 import "../css/list.css";
 
