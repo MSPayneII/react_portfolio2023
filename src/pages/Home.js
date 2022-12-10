@@ -5,6 +5,7 @@ import Collaborate from "../components/Collaborate";
 import { useGlobalContext } from "../context";
 import { workCategories } from "../utils/lists";
 import { Link } from "react-router-dom";
+import { SEO } from "../components/SEO";
 
 import "../css/list.css";
 
@@ -15,6 +16,12 @@ const Home = () => {
 
   return (
     <main onMouseOver={closeSubmenu}>
+      <SEO
+        title="Homepage | Michael S. Payne II Portfolio"
+        description="Homepage of my portfolio that gives information about myself and directs visitors to my work collections"
+        name="Michael S. Payne II Portfolio"
+        type="article"
+      />
       <Hero workSection={workSection} />
       <div className="about-me">
         <div className="polaroid">

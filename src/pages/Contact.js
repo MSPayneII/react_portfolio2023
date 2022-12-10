@@ -9,6 +9,8 @@ import Form from "../components/Form";
 import { useGlobalContext } from "../context";
 import { useEffect } from "react";
 
+import { SEO } from "../components/SEO";
+
 const Contact = () => {
   const { closeSubmenu } = useGlobalContext();
 
@@ -19,6 +21,13 @@ const Contact = () => {
 
   return (
     <main onMouseOver={closeSubmenu}>
+      <SEO
+        title="Contact me | Michael S. Payne II Portfolio"
+        description="Get in touch with me via social media and my contact form"
+        name="Michael S. Payne II Portfolio"
+        type="article"
+      />
+
       <section className="get-in-touch-text">
         <h1 className="primary-secondary-header">Get in touch</h1>
         <p className="get-in-touch-body">
@@ -53,7 +62,6 @@ const Contact = () => {
         </div>
         <div className="divider-line"></div>
       </section>
-
       <section className="contact-me">
         <h2 className="primary-secondary-header">Contact me</h2>
         <Form />

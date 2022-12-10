@@ -2,12 +2,19 @@ import React from "react";
 import { useGlobalContext } from "../context";
 import { education, skills, experience } from "../utils/lists";
 import "../css/resume.css";
+import { SEO } from "../components/SEO";
 
 const Resume = () => {
   const { closeSubmenu } = useGlobalContext();
 
   return (
     <main onMouseOver={closeSubmenu}>
+      <SEO
+        title="Resume | Michael S. Payne II Portfolio"
+        description="A digital version of my personal resume"
+        name="Michael S. Payne II Portfolio"
+        type="article"
+      />
       <section className="resume-section">
         <h1 className="primary-secondary-header">Education</h1>
         <div className="resume-lists-grouping">
