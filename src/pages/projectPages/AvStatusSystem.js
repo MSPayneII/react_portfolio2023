@@ -1,6 +1,6 @@
 import { useGlobalContext } from "../../context";
 import Collaborate from "../../components/Collaborate";
-import { SEO } from "../../components/SEO";
+import SEO from "../../components/SEO";
 
 import UxProjDetails from "../../components/singleProjectComponents/UxProjDetails";
 import BigTicketItems from "../../components/singleProjectComponents/BigTicketItems";

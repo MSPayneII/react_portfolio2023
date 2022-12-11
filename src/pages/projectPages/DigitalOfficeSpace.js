@@ -1,7 +1,7 @@
 import React from "react";
 import { useGlobalContext } from "../../context";
 import Collaborate from "../../components/Collaborate";
-import { SEO } from "../../components/SEO";
+import SEO from "../../components/SEO";
 
 import UxProjDetails from "../../components/singleProjectComponents/UxProjDetails";
 import DigitalOfficeMainImg from "../../assets/DigitalOfficeSpace/digital_office_main_img.png";

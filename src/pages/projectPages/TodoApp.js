@@ -1,6 +1,6 @@
 import React from "react";
 import { useGlobalContext } from "../../context";
-import { SEO } from "../../components/SEO";
+import SEO from "../../components/SEO";
 
 import DevProjDetails from "../../components/singleProjectComponents/DevProjDetails";
 import MVPFeatures from "../../components/singleProjectComponents/MVPFeatures";

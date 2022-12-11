@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { SEO } from "../../components/SEO";
+import SEO from "../../components/SEO";
 
 import UnderConstructionImg from "../../assets/UndrawSvgs/undraw_under_construction_-46-pa.svg";
 import "../../css/project.css";

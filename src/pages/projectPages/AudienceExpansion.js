@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import UnderConstructionImg from "../../assets/UndrawSvgs/undraw_under_construction_-46-pa.svg";
-import { SEO } from "../../components/SEO";
+import SEO from "../../components/SEO";
 
 const AudienceExpansion = () => {
   return (
