@@ -1,11 +1,11 @@
 import React from "react";
-import { useGlobalContext } from "../context";
-import Collaborate from "../components/Collaborate";
+import { useGlobalContext } from "../../context";
+import Collaborate from "../../components/Collaborate";
 import { SEO } from "../../components/SEO";
 
-import UxProjDetails from "../components/singleProjectComponents/UxProjDetails";
-import DigitalOfficeMainImg from "../assets/DigitalOfficeSpace/digital_office_main_img.png";
-import BigTicketItems from "../components/singleProjectComponents/BigTicketItems";
+import UxProjDetails from "../../components/singleProjectComponents/UxProjDetails";
+import DigitalOfficeMainImg from "../../assets/DigitalOfficeSpace/digital_office_main_img.png";
+import BigTicketItems from "../../components/singleProjectComponents/BigTicketItems";
 
 const DigitalOfficeSpace = () => {
   const { findProjectInfo } = useGlobalContext();

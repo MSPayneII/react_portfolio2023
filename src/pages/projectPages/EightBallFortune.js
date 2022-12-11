@@ -1,23 +1,23 @@
 import React from "react";
-import { useGlobalContext } from "../context";
+import { useGlobalContext } from "../../context";
 import { SEO } from "../../components/SEO";
 
-import DevProjDetails from "../components/singleProjectComponents/DevProjDetails";
-import MVPFeatures from "../components/singleProjectComponents/MVPFeatures";
-import "../css/project.css";
+import DevProjDetails from "../../components/singleProjectComponents/DevProjDetails";
+import MVPFeatures from "../../components/singleProjectComponents/MVPFeatures";
+import "../../css/project.css";
 
-import EightBallFortuneMainImg from "../assets/EightBallFortune/eightball_fortune_main_img.png";
-import EightBallAnimationGif from "../assets/EightBallFortune/eightball_animation.gif";
-import EightBallFortuneResponsiveGif from "../assets/EightBallFortune/eightball_responsive.gif";
+import EightBallFortuneMainImg from "../../assets/EightBallFortune/eightball_fortune_main_img.png";
+import EightBallAnimationGif from "../../assets/EightBallFortune/eightball_animation.gif";
+import EightBallFortuneResponsiveGif from "../../assets/EightBallFortune/eightball_responsive.gif";
 
-import TabletPreview1 from "../assets/EightBallFortune/tablet_preview1.png";
-import TabletPreview2 from "../assets/EightBallFortune/tablet_preview2.png";
-import TabletPreview3 from "../assets/EightBallFortune/tablet_preview3.png";
-import TabletPreview4 from "../assets/EightBallFortune/tablet_preview4.png";
-import TabletPreview5 from "../assets/EightBallFortune/tablet_preview5.png";
-import TabletPreview6 from "../assets/EightBallFortune/tablet_preview6.png";
+import TabletPreview1 from "../../assets/EightBallFortune/tablet_preview1.png";
+import TabletPreview2 from "../../assets/EightBallFortune/tablet_preview2.png";
+import TabletPreview3 from "../../assets/EightBallFortune/tablet_preview3.png";
+import TabletPreview4 from "../../assets/EightBallFortune/tablet_preview4.png";
+import TabletPreview5 from "../../assets/EightBallFortune/tablet_preview5.png";
+import TabletPreview6 from "../../assets/EightBallFortune/tablet_preview6.png";
 
-import Collaborate from "../components/Collaborate";
+import Collaborate from "../../components/Collaborate";
 
 const EightBallFortune = () => {
   const { findProjectInfo } = useGlobalContext();

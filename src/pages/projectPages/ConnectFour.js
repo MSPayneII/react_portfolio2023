@@ -1,23 +1,23 @@
 import React from "react";
-import { useGlobalContext } from "../context";
+import { useGlobalContext } from "../../context";
 import { SEO } from "../../components/SEO";
 
-import DevProjDetails from "../components/singleProjectComponents/DevProjDetails";
-import MVPFeatures from "../components/singleProjectComponents/MVPFeatures";
-import "../css/project.css";
+import DevProjDetails from "../../components/singleProjectComponents/DevProjDetails";
+import MVPFeatures from "../../components/singleProjectComponents/MVPFeatures";
+import "../../css/project.css";
 
-import ConnectFourMainImg from "../assets/connectFour/connect_four_main_img.png";
-import GameBoardDesign from "../assets/connectFour/game_board_design.png";
-import GamePieceGif from "../assets/connectFour/game_piece_animation.gif";
+import ConnectFourMainImg from "../../assets/connectFour/connect_four_main_img.png";
+import GameBoardDesign from "../../assets/connectFour/game_board_design.png";
+import GamePieceGif from "../../assets/connectFour/game_piece_animation.gif";
 
-import MobilePreview1 from "../assets/connectFour/mobile_preview1.png";
-import MobilePreview2 from "../assets/connectFour/mobile_preview2.png";
-import MobilePreview3 from "../assets/connectFour/mobile_preview3.png";
-import MobilePreview4 from "../assets/connectFour/mobile_preview4.png";
-import MobilePreview5 from "../assets/connectFour/mobile_preview5.png";
-import MobilePreview6 from "../assets/connectFour/mobile_preview6.png";
-import MobilePreview7 from "../assets/connectFour/mobile_preview7.png";
-import Collaborate from "../components/Collaborate";
+import MobilePreview1 from "../../assets/connectFour/mobile_preview1.png";
+import MobilePreview2 from "../../assets/connectFour/mobile_preview2.png";
+import MobilePreview3 from "../../assets/connectFour/mobile_preview3.png";
+import MobilePreview4 from "../../assets/connectFour/mobile_preview4.png";
+import MobilePreview5 from "../../assets/connectFour/mobile_preview5.png";
+import MobilePreview6 from "../../assets/connectFour/mobile_preview6.png";
+import MobilePreview7 from "../../assets/connectFour/mobile_preview7.png";
+import Collaborate from "../../components/Collaborate";
 
 const ConnectFour = () => {
   const { findProjectInfo } = useGlobalContext();

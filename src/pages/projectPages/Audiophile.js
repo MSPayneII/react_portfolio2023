@@ -1,20 +1,20 @@
 import React from "react";
-import { useGlobalContext } from "../context";
+import { useGlobalContext } from "../../context";
 import { SEO } from "../../components/SEO";
 
-import DevProjDetails from "../components/singleProjectComponents/DevProjDetails";
-import MVPFeatures from "../components/singleProjectComponents/MVPFeatures";
+import DevProjDetails from "../../components/singleProjectComponents/DevProjDetails";
+import MVPFeatures from "../../components/singleProjectComponents/MVPFeatures";
 import "../css/project.css";
 
 import AudiophileMainImg from "../assets/Audiophile/audiophile_main_img.png";
 
-import CartGif from "../assets/Audiophile/audiophile_cart.gif";
+import CartGif from "../../assets/Audiophile/audiophile_cart.gif";
 
-import Preview1 from "../assets/Audiophile/product_purchase_flow.png";
-import Preview2 from "../assets/Audiophile/tablet_preview.png";
-import Preview3 from "../assets/Audiophile/checkout_flow.png";
+import Preview1 from "../../assets/Audiophile/product_purchase_flow.png";
+import Preview2 from "../../assets/Audiophile/tablet_preview.png";
+import Preview3 from "../../assets/Audiophile/checkout_flow.png";
 
-import Collaborate from "../components/Collaborate";
+import Collaborate from "../../components/Collaborate";
 
 const Audiophile = () => {
   const { findProjectInfo } = useGlobalContext();

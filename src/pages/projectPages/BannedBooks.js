@@ -1,12 +1,12 @@
-import { useGlobalContext } from "../context";
-import Collaborate from "../components/Collaborate";
+import { useGlobalContext } from "../../context";
+import Collaborate from "../../components/Collaborate";
 import { SEO } from "../../components/SEO";
 
-import UxProjDetails from "../components/singleProjectComponents/UxProjDetails";
-import BigTicketItems from "../components/singleProjectComponents/BigTicketItems";
+import UxProjDetails from "../../components/singleProjectComponents/UxProjDetails";
+import BigTicketItems from "../../components/singleProjectComponents/BigTicketItems";
 
-import BannedBooksMainImg from "../assets/BannedBooks/banned_books_main_img.png";
-import homepage2019Img from "../assets/BannedBooks/bandblandpg.png";
+import BannedBooksMainImg from "../../assets/BannedBooks/banned_books_main_img.png";
+import homepage2019Img from "../../assets/BannedBooks/bandblandpg.png";
 
 const BannedBooks = () => {
   const { findProjectInfo } = useGlobalContext();

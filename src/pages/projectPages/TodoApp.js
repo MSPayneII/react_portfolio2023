@@ -1,17 +1,17 @@
 import React from "react";
-import { useGlobalContext } from "../context";
+import { useGlobalContext } from "../../context";
 import { SEO } from "../../components/SEO";
 
-import DevProjDetails from "../components/singleProjectComponents/DevProjDetails";
-import MVPFeatures from "../components/singleProjectComponents/MVPFeatures";
-import "../css/project.css";
+import DevProjDetails from "../../components/singleProjectComponents/DevProjDetails";
+import MVPFeatures from "../../components/singleProjectComponents/MVPFeatures";
+import "../../css/project.css";
 
-import TodoAppMainImg from "../assets/ToDoApp/todo_app_main_img.png";
+import TodoAppMainImg from "../../assets/ToDoApp/todo_app_main_img.png";
 
-import Preview1 from "../assets/ToDoApp/todo_app_preview1.png";
-import Preview2 from "../assets/ToDoApp/todo_app_preview2.png";
+import Preview1 from "../../assets/ToDoApp/todo_app_preview1.png";
+import Preview2 from "../../assets/ToDoApp/todo_app_preview2.png";
 
-import Collaborate from "../components/Collaborate";
+import Collaborate from "../../components/Collaborate";
 
 const TodoApp = () => {
   const { findProjectInfo } = useGlobalContext();

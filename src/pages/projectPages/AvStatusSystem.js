@@ -1,12 +1,12 @@
-import { useGlobalContext } from "../context";
-import Collaborate from "../components/Collaborate";
+import { useGlobalContext } from "../../context";
+import Collaborate from "../../components/Collaborate";
 import { SEO } from "../../components/SEO";
 
-import UxProjDetails from "../components/singleProjectComponents/UxProjDetails";
-import BigTicketItems from "../components/singleProjectComponents/BigTicketItems";
+import UxProjDetails from "../../components/singleProjectComponents/UxProjDetails";
+import BigTicketItems from "../../components/singleProjectComponents/BigTicketItems";
 
-import AvStatusMainImg from "../assets/AvStatusSystem/av_status_main_img.png";
-import CityLocationImg from "../assets/AvStatusSystem/city_locations.png";
+import AvStatusMainImg from "../../assets/AvStatusSystem/av_status_main_img.png";
+import CityLocationImg from "../../assets/AvStatusSystem/city_locations.png";
 
 const AvStatusSystem = () => {
   const { findProjectInfo } = useGlobalContext();
