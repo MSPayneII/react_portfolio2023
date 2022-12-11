@@ -7,6 +7,7 @@ import BigTicketItems from "../../components/singleProjectComponents/BigTicketIt
 
 import AvStatusMainImg from "../../assets/AvStatusSystem/av_status_main_img.png";
 import CityLocationImg from "../../assets/AvStatusSystem/city_locations.png";
+import "../../css/project.css";
 
 const AvStatusSystem = () => {
   const { findProjectInfo } = useGlobalContext();

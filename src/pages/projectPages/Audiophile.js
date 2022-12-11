@@ -4,7 +4,7 @@ import { SEO } from "../../components/SEO";
 
 import DevProjDetails from "../../components/singleProjectComponents/DevProjDetails";
 import MVPFeatures from "../../components/singleProjectComponents/MVPFeatures";
-import "../css/project.css";
+import "../../css/project.css";
 
 import AudiophileMainImg from "../assets/Audiophile/audiophile_main_img.png";
 

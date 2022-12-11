@@ -8,6 +8,8 @@ import BigTicketItems from "../../components/singleProjectComponents/BigTicketIt
 import BannedBooksMainImg from "../../assets/BannedBooks/banned_books_main_img.png";
 import homepage2019Img from "../../assets/BannedBooks/bandblandpg.png";
 
+import "../../css/project.css";
+
 const BannedBooks = () => {
   const { findProjectInfo } = useGlobalContext();
 
