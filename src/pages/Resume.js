@@ -16,7 +16,25 @@ const Resume = () => {
         type="article"
       />
       <section className="resume-section">
-        <h1 className="primary-secondary-header">Education</h1>
+        <h1 className="primary-secondary-header">Resume</h1>
+        <div className="resume-download">
+          <p>
+            Feel free to browse my digital resume below, or you can download a
+            pdf version here:
+          </p>
+          <a
+            href="src/assets/Resume/MichaelPayneResume.pdf"
+            className="site-nav-link"
+            download="MichaelPayneResume"
+          >
+            Download Resume (PDF)
+          </a>
+        </div>
+
+        <div className="divider-line"></div>
+      </section>
+      <section className="resume-section">
+        <h2 className="primary-secondary-header">Education</h2>
         <div className="resume-lists-grouping">
           {education.map((degree) => {
             const { id, header, school, year, gpa } = degree;
@@ -35,7 +53,7 @@ const Resume = () => {
         <div className="divider-line"></div>
       </section>
       <section className="resume-section">
-        <h1 className="primary-secondary-header">Skills</h1>
+        <h2 className="primary-secondary-header">Skills</h2>
         <div className="resume-lists-grouping">
           {skills.map((skill) => {
             const { id, header, talent } = skill;
@@ -58,7 +76,7 @@ const Resume = () => {
         <div className="divider-line"></div>
       </section>
       <section className="resume-section">
-        <h1 className="primary-secondary-header">Experience</h1>
+        <h2 className="primary-secondary-header">Experience</h2>
         <div className="resume-experience-grouping">
           {experience.map((job) => {
             const { id, role, company, timeFrame, type, description } = job;
