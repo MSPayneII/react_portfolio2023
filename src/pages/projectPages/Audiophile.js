@@ -6,7 +6,7 @@ import DevProjDetails from "../../components/singleProjectComponents/DevProjDeta
 import MVPFeatures from "../../components/singleProjectComponents/MVPFeatures";
 import "../../css/project.css";
 
-import AudiophileMainImg from "../assets/Audiophile/audiophile_main_img.png";
+import AudiophileMainImg from "../../assets/Audiophile/audiophile_main_img.png";
 
 import CartGif from "../../assets/Audiophile/audiophile_cart.gif";
 
