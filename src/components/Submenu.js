@@ -26,7 +26,7 @@ const Submenu = () => {
       className={`${isSubmenuOpen ? "submenu show" : "submenu"}`}
       ref={container}
     >
-      <div className={`submenu-center ${columns}`}>
+      <nav className={`submenu-center ${columns}`}>
         {links.map((link, index) => {
           const { url, label, category } = link;
           return (
@@ -42,7 +42,7 @@ const Submenu = () => {
             </NavLink>
           );
         })}
-      </div>
+      </nav>
     </aside>
   );
 };

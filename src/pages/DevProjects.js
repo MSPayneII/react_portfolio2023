@@ -10,7 +10,7 @@ const Projects = () => {
   return (
     <main onMouseOver={closeSubmenu}>
       <SEO
-        title="Development Projects Collection | Michael S. Payne II Portfolio"
+        title="Web Development Projects Collection | Michael S. Payne II Portfolio"
         description="A collection of my web development projects"
         name="Michael S. Payne II Portfolio"
         type="article"

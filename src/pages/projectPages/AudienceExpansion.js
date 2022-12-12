@@ -7,12 +7,12 @@ const AudienceExpansion = () => {
   return (
     <main>
       <SEO
-        title="Audience Expansion | UX Projects | Michael S. Payne II Portfolio"
-        description=" Project: A customer assessment of current and potential customers to provide recommendations for attracting a new audience for Journeys International"
+        title="Audience Expansion | UX Research and Design Projects Collection | Michael S. Payne II Portfolio"
+        description="Project: A customer assessment of current and potential customers to provide recommendations for attracting a new audience for Journeys International"
         name="Michael S. Payne II Portfolio"
         type="article"
       />
-      <div className="error-text">
+      <section className="error-text">
         <h1 className="primary-secondary-header">
           This page is temporarily unavailable
         </h1>
@@ -20,7 +20,7 @@ const AudienceExpansion = () => {
         <Link to="/ux-projects" className="site-nav-link">
           Return to the UX projects page
         </Link>
-      </div>
+      </section>
       <img
         src={UnderConstructionImg}
         alt="page under construction illustration"

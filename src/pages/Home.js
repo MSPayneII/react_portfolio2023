@@ -34,7 +34,7 @@ const Home = () => {
             <p className="quaternary-header">Affinity Diagramming</p>
           </div>
         </div>
-        <div className="about-me-text">
+        <section className="about-me-text">
           <h2 className="primary-secondary-header about-me-title">About me</h2>
           <p className="about-me-description">
             I view life as a giant puzzle with individual pieces representing
@@ -47,7 +47,7 @@ const Home = () => {
             development process of configuring code pieces to visualize those
             stories and the message I'm trying to convey.
           </p>
-        </div>
+        </section>
       </div>
       <section className="my-work-section" ref={workSection}>
         <h2 className="primary-secondary-header">My work</h2>

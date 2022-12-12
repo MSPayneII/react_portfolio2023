@@ -24,8 +24,8 @@ const TodoApp = () => {
   return (
     <main>
       <SEO
-        title="Todo App | Development Projects | Michael S. Payne II Portfolio"
-        description=" Project: A todo app built with ReactJS that supports drag and drop functionality and list filtering"
+        title="Todo App | Web Development Projects Collection | Michael S. Payne II Portfolio"
+        description="Project: A todo app built with ReactJS that supports drag and drop functionality and list filtering"
         name="Michael S. Payne II Portfolio"
         type="article"
       />

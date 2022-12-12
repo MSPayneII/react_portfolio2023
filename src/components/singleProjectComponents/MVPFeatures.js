@@ -3,7 +3,7 @@ import React from "react";
 const MVPFeatures = ({ features }) => {
   const { header, featureList } = features;
   return (
-    <div className="mvp-features project-section-margin-bottom">
+    <section className="mvp-features project-section-margin-bottom">
       <h2 className="tertiary-header">{header}</h2>
       <ul className="mvp-features-list">
         {featureList.map((feature, index) => {
@@ -14,7 +14,7 @@ const MVPFeatures = ({ features }) => {
           );
         })}
       </ul>
-    </div>
+    </section>
   );
 };
 

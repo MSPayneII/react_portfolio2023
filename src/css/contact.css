@@ -4,15 +4,15 @@ Get in touch section
 ===============
 */
 
-.get-in-touch-text {
+.social-media {
   display: grid;
   margin-bottom: 2rem;
 }
 
-.get-in-touch-body {
+.socials-body {
   margin-bottom: 2.5rem;
 }
-.get-in-touch-text .primary-secondary-header {
+.social-media .primary-secondary-header {
   margin-bottom: 2.375rem;
 }
 
@@ -60,30 +60,29 @@ Get in touch section
 }
 
 @media screen and (min-width: 768px) {
+  .socials-body {
+    max-width: 40.0625rem;
+  }
   .social-icon {
     font-size: var(--ft-heading-3);
-  }
-
-  .get-in-touch-body {
-    max-width: 40.0625rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .get-in-touch-text {
+  .social-media {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .get-in-touch-text .primary-secondary-header {
+  .social-media .primary-secondary-header {
     grid-column: 1;
   }
-  .get-in-touch-body {
+  .socials-body {
     grid-column: 2;
     width: 36.6875rem;
   }
 
   .socials,
-  .get-in-touch-text .divider-line {
+  .contact-me .divider-line {
     grid-column: 1 / span end;
   }
 
@@ -121,6 +120,6 @@ Contact section
 @media screen and (min-width: 1024px) {
   .contact-me {
     grid-template-columns: repeat(2, 1fr);
-    margin-bottom: 6.8125rem;
+    margin-bottom: 4rem;
   }
 }

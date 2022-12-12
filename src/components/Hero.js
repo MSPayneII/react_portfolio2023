@@ -18,12 +18,12 @@ const Hero = ({ workSection }) => {
             Hello! I'm Michael, an aspiring UX Engineer, and Researcher
           </h1>
           <button
-            className="btn site-nav-link"
+            className="btn site-nav-link work-btn"
             onClick={() =>
               workSection.current.scrollIntoView({ behavior: "smooth" })
             }
           >
-            View my work
+            Jump to my work
           </button>
         </div>
 

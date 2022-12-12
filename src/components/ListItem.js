@@ -19,7 +19,7 @@ const ListItem = ({ img, alt, title, client, tech, desc }) => {
         <div className="divider-line"></div>
         <div className="list-details">
           <h2 className="tertiary-header">{title}</h2>
-          {client ? <h4 className="quaternary-header ">{client}</h4> : null}
+          {client ? <h3 className="quaternary-header ">{client}</h3> : null}
           {tech ? <h3 className="quaternary-header ">{tech}</h3> : null}
 
           <p className="list-item-body">

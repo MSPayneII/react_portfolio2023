@@ -5,13 +5,13 @@ import ErrorImg from "../assets/UndrawSvgs/undraw_page_not_found_re_e9o6.svg";
 const PageNotFound = () => {
   return (
     <main>
-      <div className="error-text">
+      <section className="error-text">
         <h1 className="primary-secondary-header">This page does not exist</h1>
 
         <Link to="/" className="site-nav-link">
           Go to the Homepage
         </Link>
-      </div>
+      </section>
 
       <img src={ErrorImg} alt="404 page not found" className="error-img" />
     </main>

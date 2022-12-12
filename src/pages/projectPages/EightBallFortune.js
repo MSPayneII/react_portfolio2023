@@ -39,8 +39,8 @@ const EightBallFortune = () => {
   return (
     <main>
       <SEO
-        title="8-Ball Fortune Teller | Development Projects | Michael S. Payne II Portfolio"
-        description=" Project: My Bright Paths Foundation Capstone project. A digital version of the Magic Eightball produced by Mattel"
+        title="8-Ball Fortune Teller | Web Development Projects Collection | Michael S. Payne II Portfolio"
+        description="Project: My Bright Paths Foundation Capstone project. A digital version of the Magic Eightball produced by Mattel"
         name="Michael S. Payne II Portfolio"
         type="article"
       />

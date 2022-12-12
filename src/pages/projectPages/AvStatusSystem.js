@@ -38,8 +38,8 @@ const AvStatusSystem = () => {
   return (
     <main>
       <SEO
-        title="AV Status System | UX Projects | Michael S. Payne II Portfolio"
-        description=" Project: Established an automated email confirmation system for absentee ballot status updates in four Michigan cities & townships"
+        title="AV Status System | UX Research and Design Projects Collection | Michael S. Payne II Portfolio"
+        description="Project: Established an automated email confirmation system for absentee ballot status updates in four Michigan cities & townships"
         name="Michael S. Payne II Portfolio"
         type="article"
       />

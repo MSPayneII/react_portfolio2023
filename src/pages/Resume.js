@@ -2,33 +2,30 @@ import React from "react";
 import { useGlobalContext } from "../context";
 import { education, skills, experience } from "../utils/lists";
 import "../css/resume.css";
+import Collaborate from "../components/Collaborate";
 import SEO from "../components/SEO";
 
 const Resume = () => {
-  const { closeSubmenu } = useGlobalContext();
+  const { closeSubmenu, resumeDownload } = useGlobalContext();
 
   return (
     <main onMouseOver={closeSubmenu}>
       <SEO
         title="Resume | Michael S. Payne II Portfolio"
-        description="A digital version of my personal resume"
+        description="A digital version of my professional resume"
         name="Michael S. Payne II Portfolio"
         type="article"
       />
       <section className="resume-section">
         <h1 className="primary-secondary-header">Resume</h1>
         <div className="resume-download">
-          <p>
+          <p className="resume-download-text">
             Feel free to browse my digital resume below, or you can download a
             pdf version here:
           </p>
-          <a
-            href="src/assets/Resume/MichaelPayneResume.pdf"
-            className="site-nav-link"
-            download="MichaelPayneResume"
-          >
+          <button className="site-nav-link" onClick={resumeDownload}>
             Download Resume (PDF)
-          </a>
+          </button>
         </div>
 
         <div className="divider-line"></div>
@@ -95,8 +92,9 @@ const Resume = () => {
             );
           })}
         </div>
-        <div className="divider-line"></div>
+        {/* <div className="divider-line"></div> */}
       </section>
+      <Collaborate />
     </main>
   );
 };

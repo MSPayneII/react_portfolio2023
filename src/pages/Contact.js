@@ -23,21 +23,26 @@ const Contact = () => {
     <main onMouseOver={closeSubmenu}>
       <SEO
         title="Contact me | Michael S. Payne II Portfolio"
-        description="Get in touch with me via social media and my contact form"
+        description="Get in touch with me via my contact form as well as my social media"
         name="Michael S. Payne II Portfolio"
         type="article"
       />
 
-      <section className="get-in-touch-text">
-        <h1 className="primary-secondary-header">Get in touch</h1>
-        <p className="get-in-touch-body">
+      <section className="contact-me">
+        <h1 className="primary-secondary-header">Contact me</h1>
+        <Form />
+        <div className="divider-line"></div>
+      </section>
+      <section className="social-media">
+        <h2 className="primary-secondary-header">My socials</h2>
+        {/* <p className="get-in-touch-body">
           In the last couple of years, I obtained a master's in Information
           Science from the University of Michigan and completed Perficient's
           Bright Paths Program, a coding boot camp for Full Stack JavaScript and
           React Development. I'm based in Detroit, Michigan, and am currently
           seeking full-time employment in user experience and web development.
-        </p>
-        <div className="socials">
+        </p> */}
+        <div className="socials socials-body">
           <a
             href="https://www.linkedin.com/in/michaelspayneii/"
             className="external-social-link"
@@ -60,11 +65,7 @@ const Contact = () => {
             My Frontend Mentor
           </a>
         </div>
-        <div className="divider-line"></div>
-      </section>
-      <section className="contact-me">
-        <h2 className="primary-secondary-header">Contact me</h2>
-        <Form />
+        {/* <div className="divider-line"></div> */}
       </section>
     </main>
   );

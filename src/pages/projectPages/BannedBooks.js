@@ -35,8 +35,8 @@ const BannedBooks = () => {
   return (
     <main>
       <SEO
-        title="Banned Books | UX Projects | Michael S. Payne II Portfolio"
-        description=" Project: An updated needs and usability assessment analysis of the Banned & Challenged Books website for the American Library Association"
+        title="Banned Books | UX Research and Design Projects Collection | Michael S. Payne II Portfolio"
+        description="Project: An updated needs and usability assessment analysis of the Banned & Challenged Books website for the American Library Association"
         name="Michael S. Payne II Portfolio"
         type="article"
       />

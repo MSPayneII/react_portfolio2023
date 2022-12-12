@@ -69,6 +69,7 @@ const HeaderNav = () => {
                 className="link link-btn"
                 onClick={displaySubmenu}
                 onMouseOver={displaySubmenu}
+                onFocus={displaySubmenu}
               >
                 Work
               </button>

@@ -30,8 +30,8 @@ const DigitalOfficeSpace = () => {
   return (
     <main>
       <SEO
-        title="Digital Office Space | Development Projects | Michael S. Payne II Portfolio"
-        description=" Project: A UX/development project for the creation of a digital office space for a Detroit-based non-profit community organization"
+        title="Digital Office Space | Web Development Projects Collection | Michael S. Payne II Portfolio"
+        description="Project: A UX/development project for the creation of a digital office space for a Detroit-based non-profit community organization"
         name="Michael S. Payne II Portfolio"
         type="article"
       />

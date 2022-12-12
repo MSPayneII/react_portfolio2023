@@ -51,8 +51,8 @@ const ConnectFour = () => {
   return (
     <main>
       <SEO
-        title="Connect Four | Development Projects | Michael S. Payne II Portfolio"
-        description=" Project: A connect four game that allows human player vs. human player gameplay (alternating turns on the same computer)"
+        title="Connect Four | Web Development Projects Collection | Michael S. Payne II Portfolio"
+        description="Project: A connect four game that allows human player vs. human player gameplay (alternating turns on the same computer)"
         name="Michael S. Payne II Portfolio"
         type="article"
       />

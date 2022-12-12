@@ -9,8 +9,8 @@ const WebsiteComparison = () => {
   return (
     <main>
       <SEO
-        title="Website Comparison | UX Projects | Michael S. Payne II Portfolio"
-        description=" Project: A comparison of the navigability of multiple Behavioral Lab websites  using eye-tracking technology"
+        title="Website Comparison | UX Research and Design Projects Collection | Michael S. Payne II Portfolio"
+        description="Project: A comparison of the navigability of multiple Behavioral Lab websites using eye-tracking technology"
         name="Michael S. Payne II Portfolio"
         type="article"
       />
