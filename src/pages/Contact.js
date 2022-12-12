@@ -35,13 +35,7 @@ const Contact = () => {
       </section>
       <section className="social-media">
         <h2 className="primary-secondary-header">My socials</h2>
-        {/* <p className="get-in-touch-body">
-          In the last couple of years, I obtained a master's in Information
-          Science from the University of Michigan and completed Perficient's
-          Bright Paths Program, a coding boot camp for Full Stack JavaScript and
-          React Development. I'm based in Detroit, Michigan, and am currently
-          seeking full-time employment in user experience and web development.
-        </p> */}
+
         <div className="socials socials-body">
           <a
             href="https://www.linkedin.com/in/michaelspayneii/"

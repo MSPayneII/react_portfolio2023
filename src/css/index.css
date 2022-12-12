@@ -346,7 +346,7 @@ Hero
   }
 
   .hero-text {
-    gap: 11rem;
+    gap: 7rem;
   }
   .hero-title {
     width: 28.375rem;
@@ -395,6 +395,7 @@ About me
     margin-bottom: 13.75rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    align-items: flex-end;
   }
 
   .about-me .polaroid {
@@ -402,6 +403,7 @@ About me
     grid-column: 1;
     padding: 1rem 1rem 5rem 1rem;
     width: 24.875rem;
+    height: 25rem;
   }
 
   .about-me-text {

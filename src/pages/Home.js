@@ -39,13 +39,18 @@ const Home = () => {
           <p className="about-me-description">
             I view life as a giant puzzle with individual pieces representing
             different aspects of our lives. One puzzle piece alone may be hard
-            to decipher, but a beautiful image emerges when many are connected.
-            This mindset carries over to my work.
+            to decipher, but an image emerges when many are connected. This
+            mindset carries over to my work. I enjoy combining research and
+            development processes, piecing together information in hopes of
+            telling captivating stories to bring forward positive change.
             <br />
-            <br /> I enjoy utilizing research processes to tell captivating
-            stories to bring forward positive change. Also, I love the
-            development process of configuring code pieces to visualize those
-            stories and the message I'm trying to convey.
+            <br />
+            In the last couple of years, I obtained a master's in Information
+            Science from the University of Michigan and completed Perficient's
+            Bright Paths Program, a coding boot camp for Full Stack JavaScript
+            and React Development. I'm based in Detroit, Michigan, and am
+            currently seeking full-time employment in user experience and web
+            development.
           </p>
         </section>
       </div>
