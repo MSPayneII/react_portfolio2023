@@ -12,7 +12,8 @@
 .form-legend {
   font-size: var(--ft-body);
   line-height: var(--lh-h3-body);
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
+  visibility: hidden;
 }
 
 .form-label {

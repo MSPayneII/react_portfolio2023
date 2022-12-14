@@ -20,23 +20,28 @@ const DevProjDetails = ({
             <span className="stat-header">Client : </span>
             {client}
           </p> */}
-          <p className="project-stat">
-            <strong className="stat-header">Tech: </strong>
-            {tech}
-          </p>
-          <p className="project-stat">
-            <strong className="stat-header">Category: </strong>
-            {classification}
-          </p>
+          <div className="project-stat">
+            <h2 className="stat-header">Tech: </h2>
+            <p className="stat">{tech}</p>
+          </div>
+
+          <div className="project-stat">
+            <h2 className="stat-header">Category: </h2>
+            <p className="stat">{classification}</p>
+          </div>
         </div>
-        <div className="external-link-container">
-          <a href={site} className="external-link">
-            Go to website <BiLinkExternal className="external-link-icon" />
-          </a>
-          <a href={github} className="external-link">
-            Go to code <BiLinkExternal className="external-link-icon" />
-          </a>
-        </div>
+        <ul className="external-link-container">
+          <li>
+            <a href={site} className="external-link">
+              Go to website <BiLinkExternal className="external-link-icon" />
+            </a>
+          </li>
+          <li>
+            <a href={github} className="external-link">
+              Go to code <BiLinkExternal className="external-link-icon" />
+            </a>
+          </li>
+        </ul>
         <div className="divider-line"></div>
       </div>
     </section>

@@ -17,34 +17,34 @@ const UxProjDetails = ({
         <h1 className="primary-secondary-header">{title}</h1>
 
         <div className="project-stats-container flex-stats-container">
-          <div>
-            <p className="project-stat">
-              <strong className="stat-header">Client: </strong>
-              {client}
-            </p>
-            <p className="project-stat">
-              <strong className="stat-header">Role: </strong>
-              {role}
-            </p>
-            <p className="project-stat">
-              <strong className="stat-header">Time: </strong>
-              {time}
-            </p>
+          <div className="project-stat">
+            <h2 className="stat-header">Client: </h2>
+            <p className="stat">{client}</p>
           </div>
-          <div>
-            <p className="project-stat">
-              <strong className="stat-header">Team: </strong>
-              {team}
-            </p>
 
-            <p className="project-stat">
-              <strong className="stat-header">Category: </strong>
-              {classification}
-            </p>
-            <p className="project-stat skills-stat">
-              <strong className="stat-header">Skills: </strong>
-              {skills}
-            </p>
+          <div className="project-stat">
+            <h2 className="stat-header">Role: </h2>
+            <p className="stat">{role}</p>
+          </div>
+
+          <div className="project-stat">
+            <h2 className="stat-header">Time: </h2>
+            <p className="stat">{time}</p>
+          </div>
+
+          <div className="project-stat">
+            <h2 className="stat-header">Team: </h2>
+            <p className="stat">{team}</p>
+          </div>
+
+          <div className="project-stat">
+            <h2 className="stat-header">Category: </h2>
+            <p className="stat">{classification}</p>
+          </div>
+
+          <div className="project-stat">
+            <h2 className="stat-header">Skills: </h2>
+            <p className="stat skills-stat">{skills}</p>
           </div>
         </div>
 

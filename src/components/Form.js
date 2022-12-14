@@ -43,19 +43,16 @@ const Form = () => {
       ref={form}
     >
       <fieldset>
-        <legend className="form-legend">
-          Please feel free to contact me using the form below. I'd love to hear
-          about what you're working on and how I could help.
-        </legend>
+        <legend className="form-legend">Contact Form</legend>
         <label htmlFor="name" className="form-label">
-          First name
+          First name (required)
+          {errors.firstName && (
+            <div className="form-error-msg">
+              <BiErrorAlt className="error-icon" /> First name cannot be empty
+            </div>
+          )}
         </label>
 
-        {errors.firstName && (
-          <p className="form-error-msg">
-            <BiErrorAlt className="error-icon" /> A first name is required
-          </p>
-        )}
         <input
           type="text"
           placeholder="e.g. Jacob"
@@ -65,13 +62,13 @@ const Form = () => {
           {...register("firstName", { required: true })}
         />
         <label htmlFor="name" className="form-label">
-          Last name
+          Last name (required)
+          {errors.lastName && (
+            <div className="form-error-msg">
+              <BiErrorAlt className="error-icon" /> Last name cannot be empty
+            </div>
+          )}
         </label>
-        {errors.lastName && (
-          <p className="form-error-msg">
-            <BiErrorAlt className="error-icon" /> A last name is required
-          </p>
-        )}
         <input
           type="text"
           placeholder="e.g. Smith"
@@ -81,13 +78,14 @@ const Form = () => {
           {...register("lastName", { required: true })}
         />
         <label htmlFor="email" className="form-label">
-          Email
+          Email (required)
+          {errors.email && (
+            <div className="form-error-msg">
+              <BiErrorAlt className="error-icon" /> An email with an '@' sign is
+              required
+            </div>
+          )}
         </label>
-        {errors.email && (
-          <p className="form-error-msg">
-            <BiErrorAlt className="error-icon" /> A valid email is required
-          </p>
-        )}
         <input
           type="text"
           placeholder="e.g. johndoe@gmail.com"
@@ -102,14 +100,14 @@ const Form = () => {
         />
 
         <label htmlFor="message" className="form-label">
-          Message
+          Message (required)
+          {errors.message && (
+            <div className="form-error-msg">
+              <BiErrorAlt className="error-icon" /> Message cannot be empty
+            </div>
+          )}
         </label>
 
-        {errors.message && (
-          <p className="form-error-msg">
-            <BiErrorAlt className="error-icon" /> Message is required
-          </p>
-        )}
         <input
           type="text"
           name="message"

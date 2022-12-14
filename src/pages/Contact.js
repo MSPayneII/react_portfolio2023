@@ -30,7 +30,13 @@ const Contact = () => {
 
       <section className="contact-me">
         <h1 className="primary-secondary-header">Contact me</h1>
-        <Form />
+        <div>
+          <p className="contact-body">
+            Please feel free to contact me using the form below. I'd love to
+            hear about what you're working on and how I could help.
+          </p>
+          <Form />
+        </div>
         <div className="divider-line"></div>
       </section>
       <section className="social-media">
