@@ -597,7 +597,7 @@ const skills = [
   {
     id: 1,
     header: "Development",
-    talent: ["HTML", "CSS", "Vanilla JS", "ReactJS"],
+    talent: ["HTML", "CSS", "Vanilla JS", "ReactJS", "NextJS"],
   },
   {
     id: 2,
