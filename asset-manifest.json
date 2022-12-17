@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a0536acb.css",
-    "main.js": "/static/js/main.a331808e.js",
+    "main.js": "/static/js/main.a99848c5.js",
     "static/media/audiophile_cart.gif": "/static/media/audiophile_cart.859eaef585aaef121329.gif",
     "static/media/eightball_responsive.gif": "/static/media/eightball_responsive.2219c6280030c0fd293c.gif",
     "static/media/eightball_animation.gif": "/static/media/eightball_animation.69ac2ebb445058a18ce4.gif",
@@ -76,10 +76,10 @@
     "static/media/undraw_pic_profile_re_7g2h.svg": "/static/media/undraw_pic_profile_re_7g2h.d09acace8588873a309209db1328729c.svg",
     "index.html": "/index.html",
     "main.a0536acb.css.map": "/static/css/main.a0536acb.css.map",
-    "main.a331808e.js.map": "/static/js/main.a331808e.js.map"
+    "main.a99848c5.js.map": "/static/js/main.a99848c5.js.map"
   },
   "entrypoints": [
     "static/css/main.a0536acb.css",
-    "static/js/main.a331808e.js"
+    "static/js/main.a99848c5.js"
   ]
 }
